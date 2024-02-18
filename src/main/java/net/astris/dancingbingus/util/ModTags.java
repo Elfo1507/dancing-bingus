@@ -21,6 +21,8 @@ public class ModTags {
     public static class Items {
         public static final TagKey<Item> BINGUS_VALUABLES = tag("bingus_valuables");
         public static final TagKey<Item> BINGUS_UTILITY_ITEMS = tag("bingus_ingots");
+
+        public static final TagKey<Item> FISHES = tag("fishes");
         private static TagKey<Item> tag(String name) {
             return ItemTags.create(new ResourceLocation(DancingBingus.MOD_ID, name));
         }

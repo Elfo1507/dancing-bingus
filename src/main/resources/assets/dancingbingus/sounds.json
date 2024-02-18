@@ -1,0 +1,26 @@
+{
+  "bingus_ambient": {
+    "subtitles": "sounds.dancingbingus.bingus_ambient",
+    "sounds": [
+      "dancingbingus:bingus_ambient"
+    ]
+  },
+  "bingus_death": {
+    "subtitles": "sounds.dancingbingus.bingus_death",
+    "sounds": [
+      "dancingbingus:bingus_death"
+    ]
+  },
+  "bingus_hurt": {
+    "subtitles": "sounds.dancingbingus.bingus_hurt",
+    "sounds": [
+      "dancingbingus:bingus_hurt"
+    ]
+  },
+  "rickroll": {
+    "subtitles": "sounds.dancingbingus.rickroll",
+    "sounds": [
+      "dancingbingus:rickroll"
+    ]
+  }
+}

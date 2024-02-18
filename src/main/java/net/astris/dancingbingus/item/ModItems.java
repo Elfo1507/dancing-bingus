@@ -26,8 +26,14 @@ public class ModItems {
     public static final RegistryObject<Item> BINGUS_VORTEX = ITEMS.register("bingus_vortex",
             () -> new BingusVortexItem(new Item.Properties()));
     public static final RegistryObject<Item> BINGUS_FETUS = ITEMS.register("bingus_fetus",
-            () -> new ForgeSpawnEggItem(ModEntities.BINGUS, 0x000000, 0xFFFFFF, new Item.Properties()
+            () -> new ForgeSpawnEggItem(ModEntities.BINGUS, 0x00000000, 0x00FFFFFF, new Item.Properties()
     ));
+    public static final RegistryObject<Item> CURSE_SPAWN_EGG = ITEMS.register("curse_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.CURSE, 0x00000000, 0x00FFFFFF, new Item.Properties()
+    ));
+    public static final RegistryObject<Item> BANANA_SPAWN_EGG = ITEMS.register("banana_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.BANANA, 0xffe135, 0x6b3e26, new Item.Properties()
+            ));
     public static final RegistryObject<Item> BURGUER = ITEMS.register("burguer",
             () -> new Item(new Item.Properties().food(ModFoods.BURGUER)));
     public static final RegistryObject<Item> SANDWICH = ITEMS.register("sandwich",

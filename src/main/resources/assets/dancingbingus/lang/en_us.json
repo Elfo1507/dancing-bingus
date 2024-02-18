@@ -8,12 +8,21 @@
   "block.dancingbingus.pork_block": "Pork Block (a lot of pork)",
   "item.dancingbingus.bingus_core": "The Allmighty Bingus Essence",
   "item.dancingbingus.bingus_fetus": "The Allmighty Bingus Fetus",
+  "item.dancingbingus.curse_spawn_egg": "Curse Spawn Egg",
+  "item.dancingbingus.banana_spawn_egg": "Banana Cat Spawn Egg",
   "item.dancingbingus.bingus_item": "Bingus, the allmighty",
   "item.dancingbingus.bingus_shard": "Bingus Shard, an ammount of pure power and reality",
   "item.dancingbingus.bingus_vortex": "The Allmighty Bingus Vortex",
   "item.dancingbingus.burguer": "The Allmighty BeeseChurguer",
   "item.dancingbingus.sandwich": "A Very Very Big, The Biggest Sandwich",
   "item.dancingbingus.floppa": "Floppa, the betrayor",
+
+  "sound.dancingbingus.bingus_ambient": "meow meow",
+  "sound.dancingbingus.bingus_hurt": "yeeehaw",
+  "sound.dancingbingus.bingus_death": "the one piece is real",
+  "sound.dancingbingus.rickroll": "never gonna give you up",
+
+  "entity.dancingbingus.curse": "The consequence of your actions",
 
   "tooltip.dancingbingus.bingus_vortex.tooltip": "The Allmighty Bingus Vortex, that erases part of the reality at the command of the owner"
 }

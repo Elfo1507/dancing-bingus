@@ -31,7 +31,8 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModBlocks.STEAK_BLOCK.get());
                         pOutput.accept(ModBlocks.PORK_BLOCK.get());
                         pOutput.accept(ModBlocks.COOKED_CHICKEN_BLOCK.get());
-
+                        pOutput.accept(ModItems.CURSE_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.BANANA_SPAWN_EGG.get());
                     })
                     .build());
     public static void register(IEventBus eventBus) {

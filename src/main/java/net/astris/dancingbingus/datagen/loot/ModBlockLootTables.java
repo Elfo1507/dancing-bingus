@@ -17,6 +17,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
     @Override
     public void generate() {
         this.dropSelf(ModBlocks.BINGUS_BLOCK.get());
+        this.dropSelf(ModBlocks.BREAD_BLOCK.get());
+        this.dropSelf(ModBlocks.STEAK_BLOCK.get());
+        this.dropSelf(ModBlocks.PORK_BLOCK.get());
+        this.dropSelf(ModBlocks.COOKED_CHICKEN_BLOCK.get());
     }
 
     @Override

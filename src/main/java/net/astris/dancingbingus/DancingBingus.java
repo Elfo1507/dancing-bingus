@@ -3,9 +3,13 @@ package net.astris.dancingbingus;
 import com.mojang.logging.LogUtils;
 import net.astris.dancingbingus.block.ModBlocks;
 import net.astris.dancingbingus.entity.ModEntities;
+import net.astris.dancingbingus.entity.client.BananaRenderer;
 import net.astris.dancingbingus.entity.client.BingusRenderer;
+import net.astris.dancingbingus.entity.client.CurseRenderer;
 import net.astris.dancingbingus.item.ModCreativeModTabs;
 import net.astris.dancingbingus.item.ModItems;
+import net.astris.dancingbingus.loot.ModLootModifiers;
+import net.astris.dancingbingus.sound.ModSounds;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -31,6 +35,8 @@ public class DancingBingus {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModLootModifiers.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -59,6 +65,8 @@ public class DancingBingus {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.BINGUS.get(), BingusRenderer::new);
+            EntityRenderers.register(ModEntities.CURSE.get(), CurseRenderer::new);
+            EntityRenderers.register(ModEntities.BANANA.get(), BananaRenderer::new);
         }
     }
 }

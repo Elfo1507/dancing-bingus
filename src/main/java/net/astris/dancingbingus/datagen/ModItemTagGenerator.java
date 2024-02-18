@@ -5,6 +5,8 @@ import net.astris.dancingbingus.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.tags.ItemTagsProvider;
+import net.minecraft.world.entity.animal.Cat;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.level.block.Block;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -23,6 +25,12 @@ public class ModItemTagGenerator extends ItemTagsProvider {
     @Override
     protected void addTags(HolderLookup.Provider provider) {
         this.tag(ModTags.Items.BINGUS_VALUABLES)
-                .addTag(Tags.Items.GEMS).addTag(Tags.Items.INGOTS_NETHERITE);
+                .addTag(Tags.Items.GEMS)
+                .addTag(Tags.Items.INGOTS_NETHERITE);
+
+        this.tag(ModTags.Items.FISHES)
+                .add(Items.COD)
+                .add(Items.SALMON)
+                .add(Items.TROPICAL_FISH);
     }
 }

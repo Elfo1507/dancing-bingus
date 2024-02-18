@@ -67,8 +67,10 @@ public class BingusModel<T extends Entity> extends HierarchicalModel<T> {
 	    this.root().getAllParts().forEach(ModelPart::resetPose);
 		this.applyHeadRotation(netHeadYaw, headPitch, ageInTicks);
 
-		this.animateWalk(ModAnimationsDefinition.floating, limbSwing, limbSwingAmount, 0.5f, 0.5f);
+		this.animateWalk(ModAnimationsDefinition.floating, limbSwing, limbSwingAmount, 1f, 0.5f);
 		this.animate(((BingusEntity) entity).idleAnimationState, ModAnimationsDefinition.floating, ageInTicks, 1f);
+
+
 	}
 
 	private void applyHeadRotation(float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {

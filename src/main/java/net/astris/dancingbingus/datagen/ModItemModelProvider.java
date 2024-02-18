@@ -25,7 +25,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BINGUS_VORTEX);
         simpleItem(ModItems.BURGUER);
         simpleItem(ModItems.FLOPPA);
+        simpleItem(ModItems.SANDWICH);
+        simpleItem(ModItems.CURSE_SPAWN_EGG);
 
+        withExistingParent(ModItems.CURSE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.BANANA_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
