@@ -1,0 +1,30 @@
+package net.astris.dancingbingus.datagen.loot;
+
+import net.astris.dancingbingus.block.ModBlocks;
+import net.minecraft.data.loot.BlockLootSubProvider;
+import net.minecraft.world.flag.FeatureFlags;
+import net.minecraft.world.level.block.Block;
+import net.minecraftforge.registries.RegistryObject;
+
+import java.util.Set;
+
+public class ModBlockLootTables extends BlockLootSubProvider {
+
+    public ModBlockLootTables() {
+        super(Set.of(), FeatureFlags.REGISTRY.allFlags());
+    }
+
+    @Override
+    public void generate() {
+        this.dropSelf(ModBlocks.BINGUS_BLOCK.get());
+        this.dropSelf(ModBlocks.BREAD_BLOCK.get());
+        this.dropSelf(ModBlocks.STEAK_BLOCK.get());
+        this.dropSelf(ModBlocks.PORK_BLOCK.get());
+        this.dropSelf(ModBlocks.COOKED_CHICKEN_BLOCK.get());
+    }
+
+    @Override
+    public Iterable<Block> getKnownBlocks() {
+        return ModBlocks.BLOCKS.getEntries().stream().map(RegistryObject::get)::iterator;
+    }
+}
